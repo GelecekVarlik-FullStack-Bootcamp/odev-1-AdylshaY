@@ -1,3 +1,6 @@
+USE [master]
+GO
+/****** Object:  Database [GelecekVarlikOdev1]    Script Date: 25.04.2022 18:29:08 ******/
 CREATE DATABASE [GelecekVarlikOdev1]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -77,7 +80,7 @@ ALTER DATABASE [GelecekVarlikOdev1] SET QUERY_STORE = OFF
 GO
 USE [GelecekVarlikOdev1]
 GO
-/****** Object:  Table [dbo].[Account]    Script Date: 20.04.2022 09:04:03 ******/
+/****** Object:  Table [dbo].[Account]    Script Date: 25.04.2022 18:29:08 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -94,7 +97,7 @@ CREATE TABLE [dbo].[Account](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AccountContactRole]    Script Date: 20.04.2022 09:04:03 ******/
+/****** Object:  Table [dbo].[AccountContactRole]    Script Date: 25.04.2022 18:29:08 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -109,7 +112,7 @@ CREATE TABLE [dbo].[AccountContactRole](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Campaign]    Script Date: 20.04.2022 09:04:03 ******/
+/****** Object:  Table [dbo].[Campaign]    Script Date: 25.04.2022 18:29:08 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -128,7 +131,7 @@ CREATE TABLE [dbo].[Campaign](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[CampaignMember]    Script Date: 20.04.2022 09:04:03 ******/
+/****** Object:  Table [dbo].[CampaignMember]    Script Date: 25.04.2022 18:29:08 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -144,7 +147,7 @@ CREATE TABLE [dbo].[CampaignMember](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Case]    Script Date: 20.04.2022 09:04:03 ******/
+/****** Object:  Table [dbo].[Case]    Script Date: 25.04.2022 18:29:08 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -158,7 +161,7 @@ CREATE TABLE [dbo].[Case](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Contact]    Script Date: 20.04.2022 09:04:03 ******/
+/****** Object:  Table [dbo].[Contact]    Script Date: 25.04.2022 18:29:08 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -174,7 +177,7 @@ CREATE TABLE [dbo].[Contact](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Contract]    Script Date: 20.04.2022 09:04:03 ******/
+/****** Object:  Table [dbo].[Contract]    Script Date: 25.04.2022 18:29:08 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -190,7 +193,7 @@ CREATE TABLE [dbo].[Contract](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Lead]    Script Date: 20.04.2022 09:04:03 ******/
+/****** Object:  Table [dbo].[Lead]    Script Date: 25.04.2022 18:29:08 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -206,7 +209,7 @@ CREATE TABLE [dbo].[Lead](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Opportunity]    Script Date: 20.04.2022 09:04:03 ******/
+/****** Object:  Table [dbo].[Opportunity]    Script Date: 25.04.2022 18:29:08 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -223,7 +226,7 @@ CREATE TABLE [dbo].[Opportunity](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[OpportunityContactRole]    Script Date: 20.04.2022 09:04:03 ******/
+/****** Object:  Table [dbo].[OpportunityContactRole]    Script Date: 25.04.2022 18:29:08 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -255,12 +258,12 @@ REFERENCES [dbo].[Campaign] ([Campaign_ID])
 GO
 ALTER TABLE [dbo].[CampaignMember] CHECK CONSTRAINT [FK_CampaignMember_Campaign]
 GO
-ALTER TABLE [dbo].[CampaignMember]  WITH CHECK ADD  CONSTRAINT [FK_CampaignMember_Contact] FOREIGN KEY([CampaignMember_ID])
+ALTER TABLE [dbo].[CampaignMember]  WITH CHECK ADD  CONSTRAINT [FK_CampaignMember_Contact1] FOREIGN KEY([Contact_ID])
 REFERENCES [dbo].[Contact] ([Contact_ID])
 GO
-ALTER TABLE [dbo].[CampaignMember] CHECK CONSTRAINT [FK_CampaignMember_Contact]
+ALTER TABLE [dbo].[CampaignMember] CHECK CONSTRAINT [FK_CampaignMember_Contact1]
 GO
-ALTER TABLE [dbo].[CampaignMember]  WITH CHECK ADD  CONSTRAINT [FK_CampaignMember_Lead] FOREIGN KEY([CampaignMember_ID])
+ALTER TABLE [dbo].[CampaignMember]  WITH CHECK ADD  CONSTRAINT [FK_CampaignMember_Lead] FOREIGN KEY([Lead_ID])
 REFERENCES [dbo].[Lead] ([Lead_ID])
 GO
 ALTER TABLE [dbo].[CampaignMember] CHECK CONSTRAINT [FK_CampaignMember_Lead]
